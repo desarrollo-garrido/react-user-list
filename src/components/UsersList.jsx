@@ -1,8 +1,10 @@
 import UserRow from './UserRow';
+import style from './UsersList.module.css';
+
 function UsersList({ users, children }) {
 	const usersRendered = users.map(user => <UserRow key={user.name} {...user} />);
 	return (
-		<div className=''>
+		<div className={style.list}>
 			{children}
 			{usersRendered}
 		</div>

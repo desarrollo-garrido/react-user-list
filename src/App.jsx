@@ -4,24 +4,29 @@ import UsersList from './components/UsersList';
 const USERS = [
 	{
 		name: 'John Wayne',
-		active: 'Active',
-		role: 'Teacher'
+		active: true,
+		role: 'teacher'
 	},
 	{
 		name: 'Harrison Ford',
-		active: 'Active',
-		role: 'Developer'
+		active: true,
+		role: 'student'
 	},
 	{
 		name: 'Miguel Indurain',
-		active: 'Active',
-		role: 'Developer'
+		active: true,
+		role: 'developer'
+	},
+	{
+		name: 'Lucas Greenhandled',
+		active: false,
+		role: 'student'
 	}
 ];
 function App() {
 	return (
 		<UsersList users={USERS}>
-			<Title>Listado de putos usuarios</Title>
+			<Title>Listado de Usuarios</Title>
 		</UsersList>
 	);
 }
