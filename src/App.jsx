@@ -1,4 +1,3 @@
-import Title from './components/Title';
 import UsersList from './components/UsersList';
 
 const USERS = [
@@ -25,8 +24,8 @@ const USERS = [
 ];
 function App() {
 	return (
-		<UsersList users={USERS}>
-			<Title>Listado de Usuarios</Title>
+		<UsersList users={[]}>
+			<h1>Listado de Usuarios</h1>
 		</UsersList>
 	);
 }
